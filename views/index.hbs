@@ -1,0 +1,15 @@
+{{>header}}
+<div class="grid-container">
+    {{#each article}}
+    <div class="card" style="width: 30rem;">
+        <img style=" width:18rem" src={{this.urlToImage}} class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">{{this.title}}</h5>
+            <p class="card-text">{{this.description}}</p>
+            <a href="{{this.url}}" class="btn btn-primary">قراءه المزيد </a>
+        </div>
+    </div>
+
+    {{/each }}
+
+{{>footer}}    
